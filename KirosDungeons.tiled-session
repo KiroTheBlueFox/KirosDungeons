@@ -1,0 +1,728 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Content/Tilemaps/test.tmx",
+    "expandedProjectPaths": [
+        "Content"
+    ],
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/Users/doudo/Desktop/Tileset Template Generator/5-terrain-template.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Content/Tilemaps/Bricks.tsx": {
+            "scaleInDock": 11,
+            "scaleInEditor": 16
+        },
+        "Content/Tilemaps/Shadows.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "Content/Tilemaps/test.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 499.3333333333333,
+                "y": 294.66666666666663
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/120.tbin": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 175.25,
+                "y": 141.25
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/120.tbin#mine": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/1.tbin": {
+            "scale": 2.8025,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 160.39250669045495,
+                "y": 160.5709188224799
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/1.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/10.tbin": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 156.625,
+                "y": 115.5
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/10.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/11.tbin": {
+            "scale": 1.6585416666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.2562492149228,
+                "y": 240.57279236276852
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/11.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/12.tbin": {
+            "scale": 0.9329296874999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640.4555541598627,
+                "y": 120.05191977557257
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/12.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/120.tbin": {
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 150.16666666666669,
+                "y": 109.66666666666666
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/120.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/13.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.06244424620877,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/13.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/14.tbin": {
+            "scale": 1.40125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 320.42818911686
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/14.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/15.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.02676181980377,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/15.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/16.tbin": {
+            "scale": 1.4926875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400.28472134991415,
+                "y": 240.50579910396522
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/16.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/17.tbin": {
+            "scale": 1.121,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.6958073148975,
+                "y": 400.53523639607494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/17.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/18.tbin": {
+            "scale": 1.40125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 320.42818911686
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/18.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/19.tbin": {
+            "scale": 1.121,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400.08920606601254,
+                "y": 400.53523639607494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/19.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/2.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.06244424620877,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/2.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/20.tbin": {
+            "scale": 1.4926875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400.28472134991415,
+                "y": 176.19227065276556
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/20.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/21.tbin": {
+            "scale": 2.242,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.18733273862625,
+                "y": 200.26761819803747
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/21.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/22.tbin": {
+            "scale": 1.2455555555555555,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.4549509366637,
+                "y": 360.4817127564675
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/22.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/23.tbin": {
+            "scale": 1.40125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.07136485281,
+                "y": 320.42818911686
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/23.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/24.tbin": {
+            "scale": 1.3569886363636363,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 440.3131934849056,
+                "y": 320.56274337394797
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/24.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/25.tbin": {
+            "scale": 1.6585416666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.2562492149228,
+                "y": 200.17585730435877
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/25.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/26.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.02676181980377,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/26.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/27.tbin": {
+            "scale": 1.3569886363636363,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 440.3131934849056,
+                "y": 200.44383033957212
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/27.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/28.tbin": {
+            "scale": 1.121,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 440.2319357716324,
+                "y": 400.53523639607494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/28.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/29.tbin": {
+            "scale": 1.121,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 440.2319357716324,
+                "y": 400.53523639607494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/29.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/3.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.06244424620877,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/3.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/31.tbin": {
+            "scale": 1.8683333333333332,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.19625334522743,
+                "y": 240.32114183764494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/31.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/32.tbin": {
+            "scale": 1.40125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.07136485281,
+                "y": 320.42818911686
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/32.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/33.tbin": {
+            "scale": 1.8683333333333332,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.05352363960748,
+                "y": 240.32114183764494
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/33.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/34.tbin": {
+            "scale": 1.6585416666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.2562492149228,
+                "y": 240.57279236276852
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/34.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/35.tbin": {
+            "scale": 2.132410714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.19930494493997,
+                "y": 160.38186157517902
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/35.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/36.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.02676181980377,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/36.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/37.tbin": {
+            "scale": 1.4926875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400.28472134991415,
+                "y": 200.30984382196542
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/37.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/38.tbin": {
+            "scale": 1.8658593749999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.22777707993134,
+                "y": 240.10383955114517
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/38.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/39.tbin": {
+            "scale": 0.9341666666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 161.10615521855493,
+                "y": 480.6422836752899
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/39.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/4.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.06244424620877,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/4.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/5.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.06244424620877,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/5.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/6.tbin": {
+            "scale": 1.2455555555555555,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 280.59768064228365,
+                "y": 360.4817127564675
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/6.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/7.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.6155218554862,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/7.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/77377.tbin": {
+            "scale": 0.5338095238095237,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 401.8287243532561,
+                "y": 841.1239964317575
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/77377.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/8.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.6155218554862,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/8.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/9.tbin": {
+            "scale": 1.6014285714285714,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 360.6155218554862,
+                "y": 280.3746654772524
+            }
+        },
+        "E:/Bureau/Logiciels/XNBCli/unpacked/Mines/9.tbin#mine": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Maps/big-map.tmx": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 900.125,
+                "y": 563.25
+            }
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Maps/test-map.tmx": {
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 183.83333333333331,
+                "y": 127.66666666666666
+            }
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/stardew-valley-outdoor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/terrain.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/test-tileset.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/tree.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/My Own Games/Midtown/Content/Maps/test-map.tmx": {
+            "scale": 3.0281249999999997,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 144.47884416924666,
+                "y": 123.50877192982458
+            }
+        },
+        "E:/Bureau/Mes Docs/My Own Games/Midtown/Content/Tilesets/test-tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonAbstract/normal/normal1.tmx": {
+            "scale": 0.6834722222222221,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 893.9646413330626,
+                "y": 623.2879496037391
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/boss/boss.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 721,
+                "y": 600
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/challenge/challenge.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 720.6666666666667,
+                "y": 600
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/normal/Shadows.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/normal/normal1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 626,
+                "y": 585.3333333333333
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/normal/normal2.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 720,
+                "y": 599.3333333333333
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/shop/itemShop.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 739.3333333333333,
+                "y": 549.3333333333333
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/shop/shop.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 618,
+                "y": 498.66666666666663
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/shop/shop1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 13,
+            "viewCenter": {
+                "x": 876.6666666666667,
+                "y": 616
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/shop/weaponShop.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 760.6666666666667,
+                "y": 500
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/rooms/dungeonNormal/tall/tall1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 15,
+            "viewCenter": {
+                "x": 567.3333333333333,
+                "y": 806.6666666666666
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/testmaps/TestMap.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 239.66666666666669,
+                "y": 239.99999999999997
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/testmaps/TestMapBig.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 764,
+                "y": 810
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/testmaps/TestMapBigWhite.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 72,
+                "y": 1230.6666666666665
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/testmaps/TilesetTest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/testmaps/TilesetTestWhite.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/tilesets/DungeonAbstract.tsx": {
+            "scaleInDock": 1
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/tilesets/DungeonNormal.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 3
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/tilesets/Shadows.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 4
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/projet/core/assets/tilesets/Shadows24.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 4
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/test_Baptiste/TestMap.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 238.99999999999997,
+                "y": 239.99999999999997
+            }
+        },
+        "E:/Bureau/Mes Docs/PT/Projet-Tutore/test_Baptiste/TilesetTest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "E:/Bureau/Mes Docs/Py-RPG/Maps/testmap.tmx": {
+            "scale": 0.8885044642857142,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 623.5196583343802,
+                "y": 359.0302725788218
+            }
+        },
+        "E:/Bureau/Mes Docs/Py-RPG/Maps/testtileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "E:/Bureau/Mes Docs/Projets Randoms/KirosDungeons/Content/Textures",
+    "map.fixedSize": true,
+    "map.height": 45,
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": 1,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 80,
+    "openFiles": [
+        "Content/Tilemaps/test.tmx",
+        "Content/Tilemaps/Bricks.tsx",
+        "Content/Tilemaps/Shadows.tsx"
+    ],
+    "project": "KirosDungeons.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "Content/Tilemaps/Shadows.tsx",
+        "Content/Tilemaps/Bricks.tsx",
+        "Content/Tilemaps/test.tmx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Maps/big-map.tmx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/stardew-valley-outdoor.tsx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/tree.tsx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/terrain.tsx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Tilesets/test-tileset.tsx",
+        "E:/Bureau/Mes Docs/Midtown/Content/Maps/test-map.tmx",
+        "C:/Users/doudo/Desktop/Tileset Template Generator/5-terrain-template.tsx",
+        "E:/Bureau/Mes Docs/My Own Games/Midtown/Content/Tilesets/test-tileset.tsx",
+        "E:/Bureau/Mes Docs/My Own Games/Midtown/Content/Maps/test-map.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFilter": "Fichiers de jeu de tuiles Tiled (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}
