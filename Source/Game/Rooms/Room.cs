@@ -1,7 +1,9 @@
 ﻿using KirosDungeons.Source.Game.Entities;
 using KirosDungeons.Source.Game.Screens;
+using KirosDungeons.Source.Game.Utils;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
+using MonoGame.Extended.Collisions;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
 using System;
@@ -20,8 +22,12 @@ namespace KirosDungeons.Source.Game.Rooms
         public int WidthInPixels => TiledMap.WidthInPixels;
         public int HeightInPixels => TiledMap.HeightInPixels;
         public List<CollisionRectangle> Collisions = new List<CollisionRectangle>();
+        public List<JumpThroughRectangle> JumpThroughCollisions = new List<JumpThroughRectangle>();
+        public List<SlopeRectangle> SlopeCollisions = new List<SlopeRectangle>();
+        public List<PlayerClipRectangle> PlayerClipCollisions = new List<PlayerClipRectangle>();
         public float Gravity { get; private set; } = 256;
         public float GravityStrength { get; private set; } = 16;
+        public float AirFriction { get; private set; } = 32;
 
         public Room(KirosDungeons game, Screen screen, string mapFile) : base(game, screen)
         {
@@ -40,14 +46,36 @@ namespace KirosDungeons.Source.Game.Rooms
 
         private void SetupCollisions()
         {
-            foreach (TiledMapLayer layer in TiledMap.Layers)
-            {
-                if (layer is TiledMapObjectLayer objectLayer && layer.Name.ToLower().Contains("collisions"))
+            foreach (TiledMapLayer layer in TiledMap.Layers) {
+                if (layer is TiledMapObjectLayer objectLayer)
                 {
-                    foreach (TiledMapObject objectInLayer in objectLayer.Objects)
-                    {
-                        Collisions.Add(new CollisionRectangle(this, new RectangleF(objectInLayer.Position, objectInLayer.Size)));
-                    }
+                    if (layer.Name.ToLower().Contains("collisions"))
+                        foreach (TiledMapObject objectInLayer in objectLayer.Objects)
+                            if (objectInLayer.IsVisible)
+                                Collisions.Add(new CollisionRectangle(this, new RectangleF(objectInLayer.Position, objectInLayer.Size)));
+
+                    if (layer.Name.ToLower().Contains("jumpthrough"))
+                        foreach (TiledMapObject objectInLayer in objectLayer.Objects)
+                            if (objectInLayer.IsVisible)
+                                JumpThroughCollisions.Add(new JumpThroughRectangle(this, new RectangleF(objectInLayer.Position, objectInLayer.Size)));
+
+                    if (layer.Name.ToLower().Contains("slopes"))
+                        foreach (TiledMapObject objectInLayer in objectLayer.Objects)
+                        {
+                            if (objectInLayer.IsVisible)
+                            {
+                                Direction direction = Direction.Right;
+                                if (objectInLayer.Properties.ContainsKey("Left")) {
+                                    direction = (bool.Parse(objectInLayer.Properties["Left"])) ? Direction.Left : Direction.Right;
+                                }
+                                SlopeCollisions.Add(new SlopeRectangle(this, new RectangleF(objectInLayer.Position, objectInLayer.Size), direction));
+                            }
+                        }
+
+                    if (layer.Name.ToLower().Contains("playerclip"))
+                        foreach (TiledMapObject objectInLayer in objectLayer.Objects)
+                            if (objectInLayer.IsVisible)
+                                PlayerClipCollisions.Add(new PlayerClipRectangle(this, new RectangleF(objectInLayer.Position, objectInLayer.Size)));
                 }
             }
         }

@@ -11,6 +11,7 @@ namespace KirosDungeons.Source.Game
         protected SpriteBatch SpriteBatch { get => Game.SpriteBatch; }
         protected ContentManager Content { get => Game.Content; }
         public Screen Screen { get; private set; }
+        public Settings Settings { get => Game.Settings; }
 
         public GameElement(KirosDungeons game, Screen screen) : base(game)
         {

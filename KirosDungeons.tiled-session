@@ -17,19 +17,19 @@
             "scaleInEditor": 2
         },
         "Content/Tilemaps/Bricks.tsx": {
-            "scaleInDock": 11,
+            "scaleInDock": 5.5,
             "scaleInEditor": 16
         },
         "Content/Tilemaps/Shadows.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 3,
             "scaleInEditor": 8
         },
         "Content/Tilemaps/test.tmx": {
-            "scale": 0.75,
-            "selectedLayer": 3,
+            "scale": 2,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 499.3333333333333,
-                "y": 294.66666666666663
+                "x": 296.25,
+                "y": 244
             }
         },
         "E:/Bureau/Logiciels/XNBCli/unpacked/120.tbin": {
@@ -686,12 +686,12 @@
     },
     "last.imagePath": "E:/Bureau/Mes Docs/Projets Randoms/KirosDungeons/Content/Textures",
     "map.fixedSize": true,
-    "map.height": 45,
+    "map.height": 30,
     "map.lastUsedFormat": "tmx",
     "map.orientation": 1,
     "map.tileHeight": 16,
     "map.tileWidth": 16,
-    "map.width": 80,
+    "map.width": 40,
     "openFiles": [
         "Content/Tilemaps/test.tmx",
         "Content/Tilemaps/Bricks.tsx",

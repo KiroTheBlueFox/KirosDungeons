@@ -1,20 +1,37 @@
 ﻿using KirosDungeons.Source.Game.Entities;
+using KirosDungeons.Source.Game.Entities.Enemies;
 using KirosDungeons.Source.Game.Rooms;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.Collisions;
 using MonoGame.Extended.Tiled;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace KirosDungeons.Source.Game.Screens
 {
     public class GameScreen : Screen
     {
-        public Room Room { get; private set; }
+        private Room _room;
+        public Room Room
+        {
+            get => _room;
+            set
+            {
+                _room = value;
+
+                CollisionComponent = new CollisionComponent(new RectangleF(0, 0, Room.WidthInPixels, Room.HeightInPixels));
+                CollisionComponent.Initialize();
+
+                RefreshCollisions();
+            }
+        }
         public Point CameraPosition { get; private set; }
         public RenderTarget2D GameTarget { get; private set; }
         public List<GameEntity> Entities { get; private set; }
+        public List<long> EntitiesToKill { get; private set; }
         public GameEntity Player { get; private set; }
         protected CollisionComponent CollisionComponent { get; private set; }
 
@@ -25,6 +42,7 @@ namespace KirosDungeons.Source.Game.Screens
         public GameScreen(KirosDungeons game, Screen screen) : base(game, screen)
         {
             Entities = new List<GameEntity>();
+            EntitiesToKill = new List<long>();
         }
 
         public override void Initialize()
@@ -32,20 +50,36 @@ namespace KirosDungeons.Source.Game.Screens
             foreach (GameEntity entity in Entities)
                 entity.Initialize();
 
-            Room = new Room(Game, this, "Tilemaps/test");
+            _room = new Room(Game, this, "Tilemaps/test");
             Player = new PlayerEntity(Game, this, Room, 0, 0);
 
             base.Initialize();
+        }
+
+        public void RemoveEntity(long id)
+        {
+            EntitiesToKill.Add(id);
+        }
+
+        public void AddEntity(GameEntity entity)
+        {
+            Entities.Add(entity);
+            CollisionComponent.Insert(entity);
         }
 
         public override void Load()
         {
             Room.Load();
 
+            CollisionComponent = new CollisionComponent(new RectangleF(0, 0, Room.WidthInPixels, Room.HeightInPixels));
+            CollisionComponent.Initialize();
+
+            Entities.Add(new BasicEnemy(Game, this, Room, Room.WidthInPixels / 2, Room.HeightInPixels / 2, -8, -24, 16, 24));
+
             RefreshCollisions();
 
             Player.Load();
-            Player.Move(Room.WidthInPixels / 2, Room.HeightInPixels / 2);
+            Player.Move(Room.WidthInPixels / 2f, Room.HeightInPixels / 2f);
 
             GameTarget = new RenderTarget2D(Game.GraphicsDevice, Room.WidthInPixels, Room.HeightInPixels);
 
@@ -59,17 +93,25 @@ namespace KirosDungeons.Source.Game.Screens
 
         public void RefreshCollisions()
         {
-            CollisionComponent = new CollisionComponent(new RectangleF(0, 0, Room.WidthInPixels, Room.HeightInPixels));
-            CollisionComponent.Initialize();
-
             foreach (CollisionRectangle collision in Room.Collisions)
-            {
                 CollisionComponent.Insert(collision);
-            }
+
+            foreach (SlopeRectangle collision in Room.SlopeCollisions)
+                CollisionComponent.Insert(collision);
+
+            foreach (JumpThroughRectangle collision in Room.JumpThroughCollisions)
+                CollisionComponent.Insert(collision);
+
+            foreach (CollisionRectangle collision in Room.PlayerClipCollisions)
+                CollisionComponent.Insert(collision);
 
             CollisionComponent.Insert(Player);
             foreach (GameEntity entity in Entities)
-                CollisionComponent.Insert(entity);
+                if (entity.Room == Room)
+                {
+                    CollisionComponent.Insert(entity);
+                    Debug.WriteLine("LOL");
+                }
         }
 
         public override void Update(GameTime gameTime)
@@ -77,6 +119,18 @@ namespace KirosDungeons.Source.Game.Screens
             Room.Update(gameTime);
 
             Player.Update(gameTime);
+
+            foreach (long entityID in EntitiesToKill)
+            {
+                GameEntity entity = Entities.Find(entity => entity.ID == entityID);
+                if (entity != null)
+                {
+                    Entities.Remove(entity);
+                    CollisionComponent.Remove(entity);
+                }
+            }
+
+            EntitiesToKill.Clear();
 
             foreach (GameEntity entity in Entities)
                 if (entity.Room == Room)
@@ -91,8 +145,8 @@ namespace KirosDungeons.Source.Game.Screens
 
         private void MoveCamera(GameTime gameTime)
         {
-            CameraPosition = new Point(MathHelper.Clamp((int)Player.Position.X, KirosDungeons.WIDTH / 2, Room.WidthInPixels - KirosDungeons.WIDTH / 2),
-                                        MathHelper.Clamp((int)Player.Position.Y, KirosDungeons.HEIGHT / 2, Room.HeightInPixels - KirosDungeons.HEIGHT / 2));
+            CameraPosition = new Point(MathHelper.Clamp((int)((RectangleF)Player.Bounds).Center.X, KirosDungeons.WIDTH / 2, Room.WidthInPixels - KirosDungeons.WIDTH / 2),
+                                        MathHelper.Clamp((int)((RectangleF)Player.Bounds).Center.Y, KirosDungeons.HEIGHT / 2, Room.HeightInPixels - KirosDungeons.HEIGHT / 2));
         }
 
         public override void Draw(GameTime gameTime)
@@ -141,6 +195,12 @@ namespace KirosDungeons.Source.Game.Screens
                     entity.Draw(gameTime);
 
             Player.Draw(gameTime);
+
+            SpriteBatch.End();
+
+            SpriteBatch.Begin(sortMode: SpriteSortMode.Immediate, blendState: BlendState.AlphaBlend, samplerState: SamplerState.PointClamp);
+
+            PixelFont.Draw(SpriteBatch, ((int) Math.Round(1 / gameTime.ElapsedGameTime.TotalSeconds)).ToString(), Vector2.Zero, Utils.FontOptions.Default, new Utils.FontStyle() { Color = Color.White });
 
             SpriteBatch.End();
 

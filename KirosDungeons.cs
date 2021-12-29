@@ -26,6 +26,9 @@ namespace KirosDungeons
         public Settings Settings { get; private set; }
         public GameSave GameSave { get; private set; }
         public GameStats GameStats { get; private set; }
+        public float hScale { get; private set; }
+        public float vScale { get; private set; }
+        public float Scale { get => Math.Min(hScale, vScale); }
         public RenderTarget2D MainTarget { get; private set; }
         private Dictionary<string, Language> Languages;
         public Language Language { get { foreach (KeyValuePair<string, Language> Language in Languages) if (Language.Key == Settings.Language || Language.Value.Name == Settings.Language) return Language.Value; return Languages["en_us"]; } }
@@ -37,10 +40,13 @@ namespace KirosDungeons
             WriteIndented = true,
         };
         private double TimeSinceLastSave = 0;
+        public KeyboardStateExtended KeyboardState { get; private set; }
+        public MouseStateExtended MouseState { get; private set; }
 
         public KirosDungeons()
         {
             Graphics = new GraphicsDeviceManager(this);
+            Graphics.GraphicsProfile = GraphicsProfile.HiDef;
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             Screen = new GameScreen(this);
@@ -120,10 +126,10 @@ namespace KirosDungeons
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            KeyboardState = KeyboardExtended.GetState();
+            MouseState = MouseExtended.GetState();
 
-            if (KeyboardExtended.GetState().WasKeyJustDown(Keys.F11))
+            if (KeyboardState.WasKeyJustDown(Keys.F11))
             {
                 if (Settings.Fullscreen)
                     SwitchMode(WindowMode.Borderless);
@@ -158,8 +164,8 @@ namespace KirosDungeons
 
             SpriteBatch.Begin(sortMode: SpriteSortMode.Immediate, blendState: BlendState.AlphaBlend, samplerState: SamplerState.PointClamp);
 
-            float hScale = GraphicsDevice.Viewport.Width / (float)MainTarget.Width;
-            float vScale = GraphicsDevice.Viewport.Height / (float)MainTarget.Height;
+            hScale = GraphicsDevice.Viewport.Width / (float)MainTarget.Width;
+            vScale = GraphicsDevice.Viewport.Height / (float)MainTarget.Height;
             Rectangle destRect;
 
             if (hScale > vScale)

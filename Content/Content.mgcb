@@ -47,6 +47,30 @@
 /processorParam:TextureFormat=Color
 /build:Textures/Bricks.png
 
+#begin Textures/Bullets/Normal.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Bullets/Normal.png
+
+#begin Textures/Bullets/Wide.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Bullets/Wide.png
+
 #begin Textures/Shadows.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -58,11 +82,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Textures/Shadows.png
-
-#begin Tilemaps/Bricks.tsx
-/importer:TiledMapTilesetImporter
-/processor:TiledMapTilesetProcessor
-/build:Tilemaps/Bricks.tsx
 
 #begin Tilemaps/Bricks.tsx
 /importer:TiledMapTilesetImporter
